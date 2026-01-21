@@ -1,0 +1,21 @@
+# Nmap 7.94SVN scan initiated Wed Jan 21 21:43:20 2026 as: nmap -sC -sV -T4 -oN out-nmap.txt -Pn 202.70.52.81
+Nmap scan report for 202.70.52.81
+Host is up (0.90s latency).
+Not shown: 998 filtered tcp ports (no-response)
+PORT    STATE SERVICE    VERSION
+80/tcp  open  http-proxy F5 BIG-IP load balancer http proxy
+|_http-server-header: BigIP
+|_http-title: Did not follow redirect to https://202.70.52.81/
+|_http-open-proxy: Proxy might be redirecting requests
+443/tcp open  ssl/https?
+|_http-trane-info: Problem with XML parsing of /evox/about
+|_http-title: Request Rejected
+| ssl-cert: Subject: commonName=*.smartfren.com/organizationName=PT Smartfren Telecom Tbk/countryName=ID
+| Subject Alternative Name: DNS:*.smartfren.com, DNS:smartfren.com
+| Not valid before: 2025-04-07T00:00:00
+|_Not valid after:  2026-03-07T23:59:59
+|_ssl-date: TLS randomness does not represent time
+Service Info: Device: load balancer
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Jan 21 21:46:33 2026 -- 1 IP address (1 host up) scanned in 193.38 seconds
